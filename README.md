@@ -57,7 +57,7 @@ O arquivo JogoDaVida.hpp define a classe JogoDaVida. Tal classe não possui atri
 </p>
 10. ~JogoDaVida: Destrutor da classe, não recebe parâmetros.
 <p align="center">
-	<img src="imgs/bubble.png"/> 
+	<img src=""/> 
 </p>
 
 
