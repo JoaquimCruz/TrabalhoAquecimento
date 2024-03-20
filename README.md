@@ -63,7 +63,6 @@ O arquivo JogoDaVida.hpp define a classe JogoDaVida. Tal classe não possui atri
 
 
 <p align="justify">
-Observe pela figura acima que a cada interação do algoritmo, apenas um elemento é colocado em ordem, o que exige muito trabalho durante o processo de composição da ordenação correta. Nesse processo, a cada interação o vetor é revisitado para os n - 1 elementos restantes, o que faz com que o método seja executado até que se tenha 2 elementos ainda não vizitados. 
 </p>
 
 # Compilação e Execução
