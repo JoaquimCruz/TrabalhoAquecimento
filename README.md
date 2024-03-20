@@ -35,7 +35,27 @@ O código usa da manipulação de matrizes bidimensionais para simular o famoso 
 </p>
 <p align="justify"> 
 </p>
-
+O arquivo JogoDaVida.hpp define a classe JogoDaVida. Tal classe não possui atributos privados, porém possui os seguintes atributos públicos: 
+</p>
+1. void PrintarMatriz: Função que recebe como parâmetrosuma matriz passada por referência, a quantidade de linhas, e a quantidade de colunas. Possui como objetivo printar a matriz no terminal.
+</p>
+2. void ColocarMatrizNoArquivo: Função que recebe como parâmetros uma matriz passada por referência, a quanitidade de linhas, e a quantidade de colunas. Possui como objetivo colocar as matrizes modificadas dentro do arquivo geracoes.mps.
+</p>
+3. int** LerMatrizdoArquivo: A função não recebe parâmetros. Possui como objetivo ler a matriz original do arquivo e armazenar o seu conteúdo em uma matriz gerada no arquivo main.cpp.
+</p>
+4. int** TransporMatrizEmOutra: Função que recebe como parâmetros uma matriz passada por referência, a quanitidade de linhas, e a quantidade de colunas. Possui como objetivo transpor o conteúdo de uma matriz em outra, para fazer a atualização dos dados da matriz.
+</p>
+5. int** VerificarMorte: Função que recebe como parâmetros uma matriz passada por referência, a quanitidade de linhas, e a quantidade de colunas. Possui como objetivo verificar quais células da matriz irão morrer.
+</p>
+6. int** VerificarSeRevive: Função que recebe como parâmetros uma matriz passada por referência, a quanitidade de linhas, e a quantidade de colunas. Possui como objetivo verificar quais células mortas voltam a vida.
+</p>
+7.int VerificarQuantidadadeLinhas: Função não recebe parâmetros. Possui como objetivo verificar o número de linhas da matriz.
+</p>
+8.int VerificarQuantidadadeColunas: Função não recebe parâmetros. Possui como objetivo verificar o número de colunas da matriz.
+</p>
+9. JogoDaVida: Construtor vazio da classe, não recebe parâmetros.
+</p>
+10. ~JogoDaVida: Destrutor da classe, não recebe parâmetros.
 <p align="center">
 	<img src="imgs/bubble.png"/> 
 </p>
