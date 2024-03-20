@@ -56,8 +56,9 @@ O arquivo JogoDaVida.hpp define a classe JogoDaVida. Tal classe não possui atri
 9. JogoDaVida: Construtor vazio da classe, não recebe parâmetros.
 </p>
 10. ~JogoDaVida: Destrutor da classe, não recebe parâmetros.
+</p>
 <p align="center">
-	<img src=""/> 
+<img src="https://github.com/JoaquimCruz/TrabalhoAquecimento/assets/162636656/97f853ea-9322-4443-9a16-c18a71010c01"/> 
 </p>
 
 
