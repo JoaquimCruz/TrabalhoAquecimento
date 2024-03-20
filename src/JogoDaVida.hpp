@@ -12,7 +12,6 @@ public:
     int** LerMatrizdoArquivo(); 
     int** TransporMatrizEmOutra(int **mat, int Linhas, int Colunas); 
     int** VerificarMorte(int **mat, int Linhas, int Colunas);
-    int VerificarVida(int **mat, int Linhas, int Colunas);
     int** VerificarSeRevive(int **mat, int Linhas, int Colunas); 
     int VerificarQuantidadeLinhas(); 
     int verificarQuantidadeColunas();
