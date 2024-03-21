@@ -99,21 +99,14 @@ A função para colocar as matrizes dentro do arquivo geracoes.mps utilizando re
 <img src="https://github.com/JoaquimCruz/TrabalhoAquecimento/assets/162636656/9f796e7d-256d-457f-8e9b-2c6e20f4e1c8"/> 
 </p>
 <p align="center">
-<img src="https://github.com/JoaquimCruz/TrabalhoAquecimento/assets/162636656/9f796e7d-256d-457f-8e9b-2c6e20f4e1c8"/> 
+<img src="https://github.com/JoaquimCruz/TrabalhoAquecimento/assets/162636656/7801d9fa-1ff4-4c28-8542-83d0fa7d0c51"/> 
 </p>
 
 
 
+<h1 align="Center"> Compilação e execução</h1>
 
-
-
-
-
-
-
-# Compilação e Execução
-
-O método Bubble Sort disponibilizado possui um arquivo Makefile que realiza todo o procedimento de compilação e execução. Para tanto, temos as seguintes diretrizes de execução:
+O código que simula o jogo: Jogo da Vida disponibilizado possui um arquivo Makefile que realiza todo o procedimento de compilação e execução. Para tanto, temos as seguintes diretrizes de execução:
 
 
 | Comando                |  Função                                                                                           |                     
