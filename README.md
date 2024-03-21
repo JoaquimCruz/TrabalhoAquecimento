@@ -93,13 +93,21 @@ A função para verificar se alguma célula morta voltará a vida verifica se al
 </p>
 <h1 align="justify"> Função para Colocar as Matrizes no Arquivo</h1>
 </p>
-A função para colocar as matrizes dentro do arquivo geracoes.mps utilizando recursos da biblioteca fstream. Primeiramente, com o arquivo já aberto, é colocado no arquivo o conteúdo de duas variváveis, as linhas e as colunas de cada matriz quadrática, respectivamente. Após isso, foram utilizados 2 laços de repetição for aninhadas para percorrer cada posição da matriz e colocar o conteúdo dentro do arquivo. 
+A função para colocar as matrizes dentro do arquivo geracoes.mps utilizando recursos da biblioteca fstream. Primeiramente, com o arquivo já aberto, é colocado no arquivo o conteúdo de duas variváveis, as linhas e as colunas de cada matriz quadrática, respectivamente. Após isso, foram utilizados 2 laços de repetição for aninhadas para percorrer cada posição da matriz e colocar o conteúdo dentro do arquivo. A cada execução da função para verificar morte ou verificar se uma célula revive, a matriz é posta no arquivo. Dessa forma, a cada execução do programa, 2 novas matrizes surgem no arquivo. Apenas na primeira execução que são postas 3 matrizes: A original, a modificada após a chamada da função VerificarMorte, e a modificada após a chamada da função VerificarseRevive.
 </p>
 <p align="center">
-<img src="https://github.com/JoaquimCruz/TrabalhoAquecimento/assets/162636656/2ef739eb-2c14-4a3f-8198-aeac5965eb7b"/> 
+<img src="https://github.com/JoaquimCruz/TrabalhoAquecimento/assets/162636656/9f796e7d-256d-457f-8e9b-2c6e20f4e1c8"/> 
 </p>
-<h1 align="justify"> Função para Colocar as Matrizes no Arquivo</h1>
+<p align="center">
+<img src="https://github.com/JoaquimCruz/TrabalhoAquecimento/assets/162636656/9f796e7d-256d-457f-8e9b-2c6e20f4e1c8"/> 
 </p>
+
+
+
+
+
+
+
 
 
 
