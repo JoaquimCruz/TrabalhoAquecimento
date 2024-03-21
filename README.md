@@ -89,15 +89,10 @@ A função para verificar a existência de células mortas foi implementada para
 A função para verificar se alguma célula morta voltará a vida verifica se alguma das células com valor 0 atende as condições para reviver. Desse modo, para percorrer a matriz, foram utilizadas 2 laços de repetição for aninhadas. Para fazer a verificação se a célula ficaria viva, foi criada uma variável auxiliar (ContadorVizinhos), que era incrementada sempre que 1 dos 8 vizinhos era uma célula viva(com valor 1). Para fazer isso, foram utilizadas várias estruturas condicionais if que conferem o valor das células vizinhas. Após essa verificação, a ultima estrutura condicional verifica o valor da variável auxiliar, se ela estiver com o valor igual a 3, a célula analisada volta a vida(com valor 1).
 </p>
 <p align="center">
-<img src="https://github.com/JoaquimCruz/TrabalhoAquecimento/assets/162636656/b07e780c-13e7-4168-a4df-429565c2cece"/> 
+<img src="https://github.com/JoaquimCruz/TrabalhoAquecimento/assets/162636656/2ef739eb-2c14-4a3f-8198-aeac5965eb7b"/> 
 </p>
 <h1 align="justify"> Função para Colocar as Matrizes no Arquivo</h1>
 </p>
-
-
-
-
-
 
 
 # Compilação e Execução
