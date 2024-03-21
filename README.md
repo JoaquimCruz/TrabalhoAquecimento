@@ -93,6 +93,14 @@ A função para verificar se alguma célula morta voltará a vida verifica se al
 </p>
 <h1 align="justify"> Função para Colocar as Matrizes no Arquivo</h1>
 </p>
+A função para colocar as matrizes dentro do arquivo geracoes.mps utilizando recursos da biblioteca fstream. Primeiramente, com o arquivo já aberto, é colocado no arquivo o conteúdo de duas variváveis, as linhas e as colunas de cada matriz quadrática, respectivamente. Após isso, foram utilizados 2 laços de repetição for aninhadas para percorrer cada posição da matriz e colocar o conteúdo dentro do arquivo. 
+</p>
+<p align="center">
+<img src="https://github.com/JoaquimCruz/TrabalhoAquecimento/assets/162636656/2ef739eb-2c14-4a3f-8198-aeac5965eb7b"/> 
+</p>
+<h1 align="justify"> Função para Colocar as Matrizes no Arquivo</h1>
+</p>
+
 
 
 # Compilação e Execução
