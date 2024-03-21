@@ -60,10 +60,20 @@ O arquivo JogoDaVida.hpp define a classe JogoDaVida. Tal classe não possui atri
 <p align="center">
 <img src="https://github.com/JoaquimCruz/TrabalhoAquecimento/assets/162636656/97f853ea-9322-4443-9a16-c18a71010c01"/> 
 </p>
-
-
+<h1 align="justify"> JogoDaVida.cpp </h1>
+</p>
+<p align="justify"> 
+</p>
+O arquivo JogoDaVida.cpp contém as implementações das funções definidas no arquivo JogoDaVida.hpp.
+</p>
+Assim, para a implementação dessas funções, foram utlizadas a biblioteca iostream - Biblioteca que declara objetos que controlam a leitura e a gravação nos fluxos padrão - e a biblioteca fstream - Biblioteca que define várias classes que dão suporte a operações de iostreams em sequências armazenadas em arquivos externos. As principais funções implementadas são: LerMatrizdoArquivo, VerificarMorte, VerificarSeRevive e ColocarMatrizNoArquivo. 
+</p>
+<h1 align="justify"> Função para leitura de matriz do arquivo</h1>
 <p align="justify">
 </p>
+A função para leitura da  matriz original do arquivo utiliza de recursos da biblioteca fstream para fazer a leitura da matriz do arquivo. Primeiramente, com o arquivo já aberto, o código lê as primeiras duas informações da primeira linha do arquivo, e armazena essas duas informações nas variáveis Linhas e Colunas, respectivamente. Após esse processo, uma matriz é alocada dinâmicamente para receber o conteúdo que contém no arquivo txt. Por fim, ultilizando 2 loops de repetição for aninhados, o conteúdo do arquivo é colocado em sua respectiva célula da matriz. 
+</p>
+
 
 # Compilação e Execução
 
