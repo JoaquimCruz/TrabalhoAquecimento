@@ -73,6 +73,15 @@ Assim, para a implementação dessas funções, foram utlizadas a biblioteca ios
 </p>
 A função para leitura da  matriz original do arquivo utiliza de recursos da biblioteca fstream para fazer a leitura da matriz do arquivo. Primeiramente, com o arquivo já aberto, o código lê as primeiras duas informações da primeira linha do arquivo, e armazena essas duas informações nas variáveis Linhas e Colunas, respectivamente. Após esse processo, uma matriz é alocada dinâmicamente para receber o conteúdo que contém no arquivo txt. Por fim, ultilizando 2 loops de repetição for aninhados, o conteúdo do arquivo é colocado em sua respectiva célula da matriz. 
 </p>
+<p align="center">
+<img src="https://github.com/JoaquimCruz/TrabalhoAquecimento/assets/162636656/8db5d8f4-402c-40c7-b54a-908b335d452d"/> 
+</p>
+<h1 align="justify"> Função para Verificar Célula Morta</h1>
+<p align="justify">
+</p>
+A função para verificar a existência de células mortas foi implementada para as modificações na matriz serem feitas em tempo real. Desse modo, para percorrer a matriz, foram utilizadas 2 laços de repetição for aninhadas. Para fazer a verificar se a célula ficaria viva, foi criada uma variável auxiliar (ContadorVizinhos), que era incrementada sempre que 1 dos 8 vizinhos era uma célula viva(com valor 1). Para fazer isso, foram utilizadas várias estruturas condicionais if que conferem o valor das células vizinhas. Após essa verificação, a ultima estrutura condicional verifica o valor da variável auxiliar, se ela estiver com o valor menor do que 2, ou maior do que 3, a célula analisada morre. Nessa implementação, após a célula morrer, ela já é modificada antes do laço de repetição ir para a próxima célula da matriz, ou seja, as modificações passadas do loop afetaram as modificações nas posiçoes a serem analisadas. 
+</p>
+
 
 
 # Compilação e Execução
