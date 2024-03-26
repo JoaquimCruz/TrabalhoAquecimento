@@ -21,6 +21,7 @@ int main(){
     }
     
     mat = aux.LerMatrizdoArquivo();
+    aux.VerificarMatriz(mat, linhas, Colunas);
     aux.PrintarMatriz(mat, linhas, Colunas);
     aux.ColocarMatrizNoArquivo(mat, linhas, Colunas);
 
@@ -28,18 +29,16 @@ int main(){
         
         mat = aux.VerificarMorte(mat, linhas, Colunas);
 
-        aux.PrintarMatriz(mat, linhas, Colunas);
-
-        aux.ColocarMatrizNoArquivo(mat, linhas, Colunas);
-
         mat = aux.TransporMatrizEmOutra(mat, linhas, Colunas);
         
         cout << endl;
         mat = aux.VerificarSeRevive(mat,linhas, Colunas);
 
         aux.ColocarMatrizNoArquivo(mat, linhas, Colunas);
-
+        
         aux.PrintarMatriz(mat, linhas, Colunas);
+
+        aux.VerificarMatrizNula(mat, linhas, Colunas);
 
         Quantidade--;
         

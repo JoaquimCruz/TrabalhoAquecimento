@@ -9,7 +9,7 @@ int** JogoDaVida :: LerMatrizdoArquivo(){
 
     ifstream Arquivo;
 
-    Arquivo.open("/home/joaquim/Documents/TrabalhoAquecimentoAEDS/datasets/input.txt");
+    Arquivo.open("/home/joaquim/Documents/TrabalhoAquecimento/TrabalhoAquecimento/datasets/input.txt");
 
     if(!Arquivo.is_open()){
         cout << "Erro ao abrir o arquivo!" << endl;
@@ -36,7 +36,7 @@ int** JogoDaVida :: LerMatrizdoArquivo(){
 
 void JogoDaVida :: ColocarMatrizNoArquivo(int **mat, int Linhas, int Colunas){
 
-    ofstream Arquivo("/home/joaquim/Documents/TrabalhoAquecimentoAEDS/datasets/geracoes.mps",ios::app);
+    ofstream Arquivo("/home/joaquim/Documents/TrabalhoAquecimento/TrabalhoAquecimento/datasets/geracoes.mps",ios::app);
     
     if(!Arquivo.is_open()){
         cout << "Erro ao abrir o arquivo!" << endl;
@@ -91,37 +91,37 @@ int** JogoDaVida :: VerificarMorte(int **mat, int Linhas, int Colunas){
     for(int i = 0; i < Linhas; ++i){
         for(int j = 0; j < Colunas; ++j){
 
-            if(Mat[i][j]== 1){
+            if(mat[i][j]== 1){
                 ContadorVizinhos = 0;
-                if(i > 0 && Mat[i -1 ][j] == 1){ 
+                if(i > 0 && mat[i -1 ][j] == 1){ 
                     ContadorVizinhos++;
                 }
 
-                if(i < Linhas -1  && Mat[i+1][j] == 1){
+                if(i < Linhas -1  && mat[i+1][j] == 1){
                     ContadorVizinhos++;
                 }
 
-                if(j > 0 && Mat[i][j-1] == 1){
+                if(j > 0 && mat[i][j-1] == 1){
                     ContadorVizinhos++;
                 }
 
-                if(j < Colunas -1 && Mat[i][j + 1] == 1){
+                if(j < Colunas -1 && mat[i][j + 1] == 1){
                     ContadorVizinhos++;
                 }
 
-                if (i > 0 && j > 0 && Mat[i - 1][j - 1] == 1){
+                if (i > 0 && j > 0 && mat[i - 1][j - 1] == 1){
                     ContadorVizinhos++;
                 }
 
-                if (i > 0 && j < Colunas - 1 && Mat[i - 1][j + 1] == 1){
+                if (i > 0 && j < Colunas - 1 && mat[i - 1][j + 1] == 1){
                     ContadorVizinhos++;
                 }
 
-                if (i < Linhas - 1 && j > 0 && Mat[i + 1][j - 1] == 1){
+                if (i < Linhas - 1 && j > 0 && mat[i + 1][j - 1] == 1){
                     ContadorVizinhos++;
                 }
 
-                if (i < Linhas - 1 && j < Colunas - 1 && Mat[i + 1][j + 1] == 1){
+                if (i < Linhas - 1 && j < Colunas - 1 && mat[i + 1][j + 1] == 1){
                     ContadorVizinhos++;
                 }
 
@@ -223,7 +223,7 @@ int JogoDaVida :: VerificarQuantidadeLinhas(){
 
     ifstream Arquivo;
 
-    Arquivo.open("/home/joaquim/Documents/TrabalhoAquecimentoAEDS/datasets/input.txt");
+    Arquivo.open("/home/joaquim/Documents/TrabalhoAquecimento/TrabalhoAquecimento/datasets/input.txt");
 
     if(!Arquivo.is_open()){
         cout << "Erro ao abrir o arquivo!" << endl;
@@ -242,7 +242,7 @@ int JogoDaVida :: verificarQuantidadeColunas(){
 
     ifstream Arquivo;
 
-    Arquivo.open("/home/joaquim/Documents/TrabalhoAquecimentoAEDS/datasets/input.txt");
+    Arquivo.open("/home/joaquim/Documents/TrabalhoAquecimento/TrabalhoAquecimento/datasets/input.txt");
 
     if(!Arquivo.is_open()){
         cout << "Erro ao abrir o arquivo!" << endl;
@@ -253,6 +253,33 @@ int JogoDaVida :: verificarQuantidadeColunas(){
     Arquivo.close();
 
     return Colunas;
+}
+
+void JogoDaVida::VerificarMatrizNula(int **mat, int linhas, int colunas) {
+    int aux = 0;
+
+    for(int i = 0; i < linhas; ++i){
+        for(int j = 0; j < colunas; ++j){
+            if(mat[i][j] == 0){
+                aux++;
+            }
+        }
+    }
+
+    if(aux == linhas * colunas){
+        throw runtime_error("A matriz é nula.");
+    }
+}
+
+void JogoDaVida :: VerificarMatriz(int **mat, int linhas, int colunas){
+
+    for(int i = 0; i < linhas; ++i){
+        for(int j = 0; j < colunas; ++j){
+            if(mat[i][j] != 1 && mat[i][j] != 0){
+                throw runtime_error("A matriz possui células com valor diferente de 0 ou 1!");
+            }
+        }
+    }
 }
 
 JogoDaVida :: ~JogoDaVida(){}

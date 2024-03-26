@@ -15,7 +15,10 @@ public:
     int** VerificarSeRevive(int **mat, int Linhas, int Colunas); 
     int VerificarQuantidadeLinhas(); 
     int verificarQuantidadeColunas();
+    void VerificarMatrizNula(int **mat, int Linhas, int Colunas);
+    void VerificarMatriz(int **mat, int linhas, int colunas);
     ~JogoDaVida();
+
 };
 
 #endif
