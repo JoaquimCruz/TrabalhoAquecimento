@@ -9,7 +9,7 @@ int** JogoDaVida :: LerMatrizdoArquivo(){
 
     ifstream Arquivo;
 
-    Arquivo.open("/home/joaquim/Documents/TrabalhoAquecimento/TrabalhoAquecimento/datasets/input.txt");
+    Arquivo.open("/home/joaquim/Documents/TrabalhoAquecimento/TrabalhoAquecimento/datasets/input.mps");
 
     if(!Arquivo.is_open()){
         cout << "Erro ao abrir o arquivo!" << endl;
@@ -223,7 +223,7 @@ int JogoDaVida :: VerificarQuantidadeLinhas(){
 
     ifstream Arquivo;
 
-    Arquivo.open("/home/joaquim/Documents/TrabalhoAquecimento/TrabalhoAquecimento/datasets/input.txt");
+    Arquivo.open("/home/joaquim/Documents/TrabalhoAquecimento/TrabalhoAquecimento/datasets/input.mps");
 
     if(!Arquivo.is_open()){
         cout << "Erro ao abrir o arquivo!" << endl;
@@ -242,7 +242,7 @@ int JogoDaVida :: verificarQuantidadeColunas(){
 
     ifstream Arquivo;
 
-    Arquivo.open("/home/joaquim/Documents/TrabalhoAquecimento/TrabalhoAquecimento/datasets/input.txt");
+    Arquivo.open("/home/joaquim/Documents/TrabalhoAquecimento/TrabalhoAquecimento/datasets/input.mps");
 
     if(!Arquivo.is_open()){
         cout << "Erro ao abrir o arquivo!" << endl;
