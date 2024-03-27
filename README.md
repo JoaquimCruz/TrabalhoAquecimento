@@ -53,9 +53,13 @@ O arquivo JogoDaVida.hpp define a classe JogoDaVida. Tal classe não possui atri
 </p>
 8.int VerificarQuantidadadeColunas: Função não recebe parâmetros. Possui como objetivo verificar o número de colunas da matriz.
 </p>
-9. JogoDaVida: Construtor vazio da classe, não recebe parâmetros.
+9.void VerificarMatrizNula: Função que recebe como parâmetros uma matriz passada como referência, a quantidade de linhas, e a quantidade de colunas. Possui como objetivo verificar se a matriz é nula. Caso essa afirmação for verdadeira, o programa é encerrado.
 </p>
-10. ~JogoDaVida: Destrutor da classe, não recebe parâmetros.
+10. void VerificarMatriz: Função que recebe como parâmetros uma matriz passada como referência, a quantidade de linhas, e a quantidade de colunas. Possui como objetico verificar se alguma célula da matriz possui valor diferente de 0 ou 1. Caso essa afirmação seja verdadeira, o programa é encerrado.
+</p>
+11. JogoDaVida: Construtor vazio da classe, não recebe parâmetros.
+</p>
+12. ~JogoDaVida: Destrutor da classe, não recebe parâmetros.
 </p>
 <p align="center">
 <img src="https://github.com/JoaquimCruz/TrabalhoAquecimento/assets/162636656/97f853ea-9322-4443-9a16-c18a71010c01"/> 
@@ -71,7 +75,7 @@ Assim, para a implementação dessas funções, foram utlizadas a biblioteca ios
 <h1 align="justify"> Função para leitura de matriz do arquivo</h1>
 <p align="justify">
 </p>
-A função para leitura da  matriz original do arquivo utiliza de recursos da biblioteca fstream para fazer a leitura da matriz do arquivo. Primeiramente, com o arquivo já aberto, o código lê as primeiras duas informações da primeira linha do arquivo, e armazena essas duas informações nas variáveis Linhas e Colunas, respectivamente. Após esse processo, uma matriz é alocada dinâmicamente para receber o conteúdo que contém no arquivo txt. Por fim, ultilizando 2 loops de repetição for aninhados, o conteúdo do arquivo é colocado em sua respectiva célula da matriz. 
+A função para leitura da  matriz original do arquivo utiliza de recursos da biblioteca fstream para fazer a leitura da matriz do arquivo. Primeiramente, com o arquivo já aberto, o código lê as primeiras duas informações da primeira linha do arquivo, e armazena essas duas informações nas variáveis Linhas e Colunas, respectivamente. Após esse processo, uma matriz é alocada dinâmicamente para receber o conteúdo que contém no arquivo mps. Por fim, ultilizando 2 loops de repetição for aninhados, o conteúdo do arquivo é colocado em sua respectiva célula da matriz. 
 </p>
 <p align="center">
 <img src="https://github.com/JoaquimCruz/TrabalhoAquecimento/assets/162636656/8db5d8f4-402c-40c7-b54a-908b335d452d"/> 
@@ -79,7 +83,7 @@ A função para leitura da  matriz original do arquivo utiliza de recursos da bi
 <h1 align="justify"> Função para Verificar Célula Morta</h1>
 <p align="justify">
 </p>
-A função para verificar a existência de células mortas foi implementada para as modificações na matriz serem feitas em tempo real. Desse modo, para percorrer a matriz, foram utilizadas 2 laços de repetição for aninhadas. Para fazer a verificação se a célula ficaria viva, foi criada uma variável auxiliar (ContadorVizinhos), que era incrementada sempre que 1 dos 8 vizinhos era uma célula viva(com valor 1). Para fazer isso, foram utilizadas várias estruturas condicionais if que conferem o valor das células vizinhas. Após essa verificação, a ultima estrutura condicional verifica o valor da variável auxiliar, se ela estiver com o valor menor do que 2, ou maior do que 3, a célula analisada morre. Nessa implementação, após a célula morrer, ela já é modificada antes do laço de repetição ir para a próxima célula da matriz, ou seja, as modificações passadas do loop afetarão as modificações nas posiçoes a serem analisadas. 
+A função para verificar a existência de células mortas foi implementada para as modificações na matriz serem feitas em tempo real. Desse modo, para percorrer a matriz, foram utilizadas 2 laços de repetição for aninhadas. Para fazer a verificação se a célula ficaria viva, foi criada uma variável auxiliar (ContadorVizinhos), que era incrementada sempre que 1 dos 8 vizinhos era uma célula viva(com valor 1). Para fazer isso, foram utilizadas várias estruturas condicionais if que conferem o valor das células vizinhas. Após essa verificação, a ultima estrutura condicional verifica o valor da variável auxiliar, se ela estiver com o valor menor do que 2, ou maior do que 3, a célula analisada morre.  
 </p>
 <p align="center">
 <img src="https://github.com/JoaquimCruz/TrabalhoAquecimento/assets/162636656/b07e780c-13e7-4168-a4df-429565c2cece"/> 
@@ -93,7 +97,7 @@ A função para verificar se alguma célula morta voltará a vida verifica se al
 </p>
 <h1 align="justify"> Função para Colocar as Matrizes no Arquivo</h1>
 </p>
-A função para colocar as matrizes dentro do arquivo geracoes.mps utilizando recursos da biblioteca fstream. Primeiramente, com o arquivo já aberto, é colocado no arquivo o conteúdo de duas variváveis, as linhas e as colunas de cada matriz quadrática, respectivamente. Após isso, foram utilizados 2 laços de repetição for aninhadas para percorrer cada posição da matriz e colocar o conteúdo dentro do arquivo. A cada execução da função para verificar morte ou verificar se uma célula revive, a matriz é posta no arquivo. Dessa forma, a cada execução do programa, 2 novas matrizes surgem no arquivo. Apenas na primeira execução que são postas 3 matrizes: A original, a modificada após a chamada da função VerificarMorte, e a modificada após a chamada da função VerificarseRevive.
+A função para colocar as matrizes dentro do arquivo geracoes.mps utilizando recursos da biblioteca fstream. Primeiramente, com o arquivo já aberto, é colocado no arquivo o conteúdo de duas variváveis, as linhas e as colunas de cada matriz quadrática, respectivamente. Após isso, foram utilizados 2 laços de repetição for aninhadas para percorrer cada posição da matriz e colocar o conteúdo dentro do arquivo. A cada execução execução do programa uma matriz é salva no arquivo. Dessa forma apenas na primeira execução que são postas 2 matrizes no arquivo.mps: A original e a modificada após a chamada da função VerificarseRevive.
 </p>
 <p align="center">
 <img src="https://github.com/JoaquimCruz/TrabalhoAquecimento/assets/162636656/9f796e7d-256d-457f-8e9b-2c6e20f4e1c8"/> 
