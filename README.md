@@ -75,10 +75,10 @@ Assim, para a implementação dessas funções, foram utlizadas a biblioteca ios
 <h1 align="justify"> Função para leitura de matriz do arquivo</h1>
 <p align="justify">
 </p>
-A função para leitura da  matriz original do arquivo utiliza de recursos da biblioteca fstream para fazer a leitura da matriz do arquivo. Primeiramente, com o arquivo já aberto, o código lê as primeiras duas informações da primeira linha do arquivo, e armazena essas duas informações nas variáveis Linhas e Colunas, respectivamente. Após esse processo, uma matriz é alocada dinâmicamente para receber o conteúdo que contém no arquivo mps. Por fim, ultilizando 2 loops de repetição for aninhados, o conteúdo do arquivo é colocado em sua respectiva célula da matriz. 
+A função para leitura da  matriz original do arquivo utiliza de recursos da biblioteca fstream para fazer a leitura da matriz do arquivo. Primeiramente, com o arquivo já aberto, o código lê as primeiras duas informações da primeira linha do arquivo, e armazena essas duas informações nas variáveis Linhas e Colunas, respectivamente. Após esse processo, uma matriz é alocada dinâmicamente para receber o conteúdo que contém no arquivo.mps. Por fim, ultilizando 2 loops de repetição for aninhados, o conteúdo do arquivo é colocado em sua respectiva célula da matriz. 
 </p>
 <p align="center">
-<img src="https://github.com/JoaquimCruz/TrabalhoAquecimento/assets/162636656/8db5d8f4-402c-40c7-b54a-908b335d452d"/> 
+<img src="https://github.com/JoaquimCruz/TrabalhoAquecimento/assets/162636656/15ab9710-3d3b-429c-95b8-f887c9ce9bba"/> 
 </p>
 <h1 align="justify"> Função para Verificar Célula Morta</h1>
 <p align="justify">
