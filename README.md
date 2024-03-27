@@ -62,7 +62,7 @@ O arquivo JogoDaVida.hpp define a classe JogoDaVida. Tal classe não possui atri
 12. ~JogoDaVida: Destrutor da classe, não recebe parâmetros.
 </p>
 <p align="center">
-<img src="https://github.com/JoaquimCruz/TrabalhoAquecimento/assets/162636656/97f853ea-9322-4443-9a16-c18a71010c01"/> 
+<img src="https://github.com/JoaquimCruz/TrabalhoAquecimento/assets/162636656/2c6994df-a78b-4dcc-b9ea-758644c35ce8"/> 
 </p>
 <h1 align="justify"> JogoDaVida.cpp </h1>
 </p>
@@ -86,14 +86,14 @@ A função para leitura da  matriz original do arquivo utiliza de recursos da bi
 A função para verificar a existência de células mortas foi implementada para as modificações na matriz serem feitas em tempo real. Desse modo, para percorrer a matriz, foram utilizadas 2 laços de repetição for aninhadas. Para fazer a verificação se a célula ficaria viva, foi criada uma variável auxiliar (ContadorVizinhos), que era incrementada sempre que 1 dos 8 vizinhos era uma célula viva(com valor 1). Para fazer isso, foram utilizadas várias estruturas condicionais if que conferem o valor das células vizinhas. Após essa verificação, a ultima estrutura condicional verifica o valor da variável auxiliar, se ela estiver com o valor menor do que 2, ou maior do que 3, a célula analisada morre.  
 </p>
 <p align="center">
-<img src="https://github.com/JoaquimCruz/TrabalhoAquecimento/assets/162636656/b07e780c-13e7-4168-a4df-429565c2cece"/> 
+<img src="https://github.com/JoaquimCruz/TrabalhoAquecimento/assets/162636656/967251e2-0e49-404d-950a-5ccb6c40a7e4"/> 
 </p>
 <h1 align="justify"> Função para Verificar Célula Revivente</h1>
 </p>
 A função para verificar se alguma célula morta voltará a vida verifica se alguma das células com valor 0 atende as condições para reviver. Desse modo, para percorrer a matriz, foram utilizadas 2 laços de repetição for aninhadas. Para fazer a verificação se a célula ficaria viva, foi criada uma variável auxiliar (ContadorVizinhos), que era incrementada sempre que 1 dos 8 vizinhos era uma célula viva(com valor 1). Para fazer isso, foram utilizadas várias estruturas condicionais if que conferem o valor das células vizinhas. Após essa verificação, a ultima estrutura condicional verifica o valor da variável auxiliar, se ela estiver com o valor igual a 3, a célula analisada volta a vida(com valor 1).
 </p>
 <p align="center">
-<img src="https://github.com/JoaquimCruz/TrabalhoAquecimento/assets/162636656/2ef739eb-2c14-4a3f-8198-aeac5965eb7b"/> 
+<img src="https://github.com/JoaquimCruz/TrabalhoAquecimento/assets/162636656/c322d651-973b-4460-8205-611408e0ee74"/> 
 </p>
 <h1 align="justify"> Função para Colocar as Matrizes no Arquivo</h1>
 </p>
@@ -103,7 +103,7 @@ A função para colocar as matrizes dentro do arquivo geracoes.mps utilizando re
 <img src="https://github.com/JoaquimCruz/TrabalhoAquecimento/assets/162636656/9f796e7d-256d-457f-8e9b-2c6e20f4e1c8"/> 
 </p>
 <p align="center">
-<img src="https://github.com/JoaquimCruz/TrabalhoAquecimento/assets/162636656/7801d9fa-1ff4-4c28-8542-83d0fa7d0c51"/> 
+<img src="https://github.com/JoaquimCruz/TrabalhoAquecimento/assets/162636656/7ee43742-8d6f-4c38-a122-3ee52cf3c711"/> 
 </p>
 
 
